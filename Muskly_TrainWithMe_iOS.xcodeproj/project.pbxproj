@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		880EC5B42EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */; };
+		880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5B52EB6A59600DE7406 /* ContentView.swift */; };
+		880EC5B82EB6A59900DE7406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880EC5B72EB6A59900DE7406 /* Assets.xcassets */; };
+		880EC5BB2EB6A59900DE7406 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880EC5BA2EB6A59900DE7406 /* Preview Assets.xcassets */; };
+		880EC5C52EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5C42EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift */; };
+		880EC5CF2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5CE2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.swift */; };
+		880EC5D12EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5D02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITestsLaunchTests.swift */; };
+		880EC5E52EB6B7BC00DE7406 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5E42EB6B7BC00DE7406 /* ShopView.swift */; };
+		880EC5E72EB6B7FC00DE7406 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5E62EB6B7FC00DE7406 /* ShopViewModel.swift */; };
+		880EC5EA2EB6C42600DE7406 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5E92EB6C42600DE7406 /* GoalsView.swift */; };
+		880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */; };
+		880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */; };
+		880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F62EB6C78C00DE7406 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		880EC5C12EB6A59900DE7406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880EC5A82EB6A59600DE7406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880EC5AF2EB6A59600DE7406;
+			remoteInfo = Muskly_TrainWithMe_iOS;
+		};
+		880EC5CB2EB6A59900DE7406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880EC5A82EB6A59600DE7406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880EC5AF2EB6A59600DE7406;
+			remoteInfo = Muskly_TrainWithMe_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		880EC5B02EB6A59600DE7406 /* Muskly_TrainWithMe_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muskly_TrainWithMe_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muskly_TrainWithMe_iOSApp.swift; sourceTree = "<group>"; };
+		880EC5B52EB6A59600DE7406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		880EC5B72EB6A59900DE7406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		880EC5BA2EB6A59900DE7406 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		880EC5C02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Muskly_TrainWithMe_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880EC5C42EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muskly_TrainWithMe_iOSTests.swift; sourceTree = "<group>"; };
+		880EC5CA2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Muskly_TrainWithMe_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880EC5CE2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muskly_TrainWithMe_iOSUITests.swift; sourceTree = "<group>"; };
+		880EC5D02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muskly_TrainWithMe_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		880EC5E42EB6B7BC00DE7406 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		880EC5E62EB6B7FC00DE7406 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		880EC5E92EB6C42600DE7406 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
+		880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		880EC5F62EB6C78C00DE7406 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		880EC5AD2EB6A59600DE7406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5BD2EB6A59900DE7406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5C72EB6A59900DE7406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		880EC5A72EB6A59600DE7406 = {
+			isa = PBXGroup;
+			children = (
+				880EC5B22EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */,
+				880EC5C32EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests */,
+				880EC5CD2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests */,
+				880EC5B12EB6A59600DE7406 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		880EC5B12EB6A59600DE7406 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5B02EB6A59600DE7406 /* Muskly_TrainWithMe_iOS.app */,
+				880EC5C02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.xctest */,
+				880EC5CA2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		880EC5B22EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5DD2EB6B4EF00DE7406 /* Views */,
+				880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */,
+				880EC5B52EB6A59600DE7406 /* ContentView.swift */,
+				880EC5B72EB6A59900DE7406 /* Assets.xcassets */,
+				880EC5B92EB6A59900DE7406 /* Preview Content */,
+			);
+			path = Muskly_TrainWithMe_iOS;
+			sourceTree = "<group>";
+		};
+		880EC5B92EB6A59900DE7406 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5BA2EB6A59900DE7406 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		880EC5C32EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5C42EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift */,
+			);
+			path = Muskly_TrainWithMe_iOSTests;
+			sourceTree = "<group>";
+		};
+		880EC5CD2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5CE2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.swift */,
+				880EC5D02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITestsLaunchTests.swift */,
+			);
+			path = Muskly_TrainWithMe_iOSUITests;
+			sourceTree = "<group>";
+		};
+		880EC5DD2EB6B4EF00DE7406 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5F32EB6C74100DE7406 /* HomeScreen */,
+				880EC5E82EB6C41000DE7406 /* GoalsScreen */,
+				880EC5E32EB6B76D00DE7406 /* ShopScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		880EC5E32EB6B76D00DE7406 /* ShopScreen */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5E42EB6B7BC00DE7406 /* ShopView.swift */,
+				880EC5E62EB6B7FC00DE7406 /* ShopViewModel.swift */,
+			);
+			path = ShopScreen;
+			sourceTree = "<group>";
+		};
+		880EC5E82EB6C41000DE7406 /* GoalsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5E92EB6C42600DE7406 /* GoalsView.swift */,
+				880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */,
+			);
+			path = GoalsScreen;
+			sourceTree = "<group>";
+		};
+		880EC5F32EB6C74100DE7406 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */,
+				880EC5F62EB6C78C00DE7406 /* HomeView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		880EC5AF2EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880EC5D42EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOS" */;
+			buildPhases = (
+				880EC5AC2EB6A59600DE7406 /* Sources */,
+				880EC5AD2EB6A59600DE7406 /* Frameworks */,
+				880EC5AE2EB6A59600DE7406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Muskly_TrainWithMe_iOS;
+			productName = Muskly_TrainWithMe_iOS;
+			productReference = 880EC5B02EB6A59600DE7406 /* Muskly_TrainWithMe_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		880EC5BF2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880EC5D72EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOSTests" */;
+			buildPhases = (
+				880EC5BC2EB6A59900DE7406 /* Sources */,
+				880EC5BD2EB6A59900DE7406 /* Frameworks */,
+				880EC5BE2EB6A59900DE7406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880EC5C22EB6A59900DE7406 /* PBXTargetDependency */,
+			);
+			name = Muskly_TrainWithMe_iOSTests;
+			productName = Muskly_TrainWithMe_iOSTests;
+			productReference = 880EC5C02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		880EC5C92EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880EC5DA2EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOSUITests" */;
+			buildPhases = (
+				880EC5C62EB6A59900DE7406 /* Sources */,
+				880EC5C72EB6A59900DE7406 /* Frameworks */,
+				880EC5C82EB6A59900DE7406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880EC5CC2EB6A59900DE7406 /* PBXTargetDependency */,
+			);
+			name = Muskly_TrainWithMe_iOSUITests;
+			productName = Muskly_TrainWithMe_iOSUITests;
+			productReference = 880EC5CA2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		880EC5A82EB6A59600DE7406 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					880EC5AF2EB6A59600DE7406 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					880EC5BF2EB6A59900DE7406 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 880EC5AF2EB6A59600DE7406;
+					};
+					880EC5C92EB6A59900DE7406 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 880EC5AF2EB6A59600DE7406;
+					};
+				};
+			};
+			buildConfigurationList = 880EC5AB2EB6A59600DE7406 /* Build configuration list for PBXProject "Muskly_TrainWithMe_iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 880EC5A72EB6A59600DE7406;
+			productRefGroup = 880EC5B12EB6A59600DE7406 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				880EC5AF2EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */,
+				880EC5BF2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests */,
+				880EC5C92EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		880EC5AE2EB6A59600DE7406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880EC5BB2EB6A59900DE7406 /* Preview Assets.xcassets in Resources */,
+				880EC5B82EB6A59900DE7406 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5BE2EB6A59900DE7406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5C82EB6A59900DE7406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		880EC5AC2EB6A59600DE7406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880EC5EA2EB6C42600DE7406 /* GoalsView.swift in Sources */,
+				880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */,
+				880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */,
+				880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */,
+				880EC5B42EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift in Sources */,
+				880EC5E72EB6B7FC00DE7406 /* ShopViewModel.swift in Sources */,
+				880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */,
+				880EC5E52EB6B7BC00DE7406 /* ShopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5BC2EB6A59900DE7406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880EC5C52EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880EC5C62EB6A59900DE7406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880EC5D12EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITestsLaunchTests.swift in Sources */,
+				880EC5CF2EB6A59900DE7406 /* Muskly_TrainWithMe_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		880EC5C22EB6A59900DE7406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880EC5AF2EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */;
+			targetProxy = 880EC5C12EB6A59900DE7406 /* PBXContainerItemProxy */;
+		};
+		880EC5CC2EB6A59900DE7406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880EC5AF2EB6A59600DE7406 /* Muskly_TrainWithMe_iOS */;
+			targetProxy = 880EC5CB2EB6A59900DE7406 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		880EC5D22EB6A59900DE7406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		880EC5D32EB6A59900DE7406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		880EC5D52EB6A59900DE7406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Muskly_TrainWithMe_iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		880EC5D62EB6A59900DE7406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Muskly_TrainWithMe_iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		880EC5D82EB6A59900DE7406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muskly_TrainWithMe_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Muskly_TrainWithMe_iOS";
+			};
+			name = Debug;
+		};
+		880EC5D92EB6A59900DE7406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Muskly_TrainWithMe_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Muskly_TrainWithMe_iOS";
+			};
+			name = Release;
+		};
+		880EC5DB2EB6A59900DE7406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Muskly_TrainWithMe_iOS;
+			};
+			name = Debug;
+		};
+		880EC5DC2EB6A59900DE7406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.unicauca.co.Muskly-TrainWithMe-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Muskly_TrainWithMe_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		880EC5AB2EB6A59600DE7406 /* Build configuration list for PBXProject "Muskly_TrainWithMe_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880EC5D22EB6A59900DE7406 /* Debug */,
+				880EC5D32EB6A59900DE7406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880EC5D42EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880EC5D52EB6A59900DE7406 /* Debug */,
+				880EC5D62EB6A59900DE7406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880EC5D72EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880EC5D82EB6A59900DE7406 /* Debug */,
+				880EC5D92EB6A59900DE7406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880EC5DA2EB6A59900DE7406 /* Build configuration list for PBXNativeTarget "Muskly_TrainWithMe_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880EC5DB2EB6A59900DE7406 /* Debug */,
+				880EC5DC2EB6A59900DE7406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 880EC5A82EB6A59600DE7406 /* Project object */;
+}
