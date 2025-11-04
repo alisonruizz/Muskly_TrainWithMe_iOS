@@ -18,7 +18,7 @@ struct MainView: View {
                     } label: {
                         Image(systemName: "questionmark.circle.fill")
                             .font(.title2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.blue)
                             .padding()
                     }
                 }

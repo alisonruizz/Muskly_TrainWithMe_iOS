@@ -10,45 +10,32 @@ enum NavRoutes: String, CaseIterable {
 
 struct AppNavigation: View {
     @State private var selectedTab: NavRoutes = .home
-    
+
     var body: some View {
-        TabView(selection: $selectedTab) {
-            // Pantalla Home
-            TrainStartScreen()
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
+        ZStack(alignment: .bottom) {
+            // Contenido principal según la pestaña seleccionada
+            Group {
+                switch selectedTab {
+                case .home:
+                    TrainStartScreen()
+                case .train:
+                    // TrainScreen()
+                    Color.green.opacity(0.1).overlay(Text("Train Screen"))
+                case .tips:
+                    // TipsScreen()
+                    Color.orange.opacity(0.1).overlay(Text("Tips Screen"))
+                case .goals:
+                    GoalsScreen()
+                case .shop:
+                    ShopScreen()
                 }
-                .tag(NavRoutes.home)
-            
-            // Pantalla Train
-            /*TrainScreen()
-                .tabItem {
-                    Label("Train", systemImage: "figure.walk")
-                }
-                .tag(NavRoutes.train)
-            
-            // Pantalla Tips
-            TipsScreen()
-                .tabItem {
-                    Label("Tips", systemImage: "list.bullet.rectangle")
-                }
-                .tag(NavRoutes.tips)
-            */
-            
-            // Pantalla Goals
-            GoalsScreen()
-                .tabItem {
-                    Label("Goals", systemImage: "star.fill")
-                }
-                .tag(NavRoutes.goals)
-            
-            // Pantalla Shop
-            ShopScreen()
-                .tabItem {
-                    Label("Shop", systemImage: "cart.fill")
-                }
-                .tag(NavRoutes.shop)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("SecondaryContainer").ignoresSafeArea())
+
+            // 👇 Aquí se muestra tu barra personalizada blanca
+            BottomNavigationBar(selectedTab: $selectedTab)
         }
-        .accentColor(Color("PrimaryColor")) // opcional, color de íconos activos
+        .ignoresSafeArea(.keyboard)
     }
 }

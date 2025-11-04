@@ -19,16 +19,16 @@ struct BottomNavigationBar: View {
                 VStack(spacing: 4) {
                     Image(systemName: icon)
                         .font(.system(size: 22, weight: .semibold))
-                        .foregroundColor(selectedTab == route ? Color.white : Color.gray.opacity(0.6))
+                        .foregroundColor(selectedTab == route ? Color.blue : Color.gray.opacity(0.6))
 
                     Text(label)
                         .font(.caption2)
                         .fontWeight(selectedTab == route ? .bold : .regular)
-                        .foregroundColor(selectedTab == route ? Color.white : Color.gray.opacity(0.6))
+                        .foregroundColor(selectedTab == route ? Color.blue : Color.gray.opacity(0.6))
                 }
                 .padding(.vertical, 8)
                 .onTapGesture {
-                    withAnimation(.spring()) {
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                         selectedTab = route
                     }
                 }
@@ -38,10 +38,9 @@ struct BottomNavigationBar: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 6)
         .background(
-            // Fondo gris con opacidad y forma curva
+            // Fondo blanco con sombra suave y bordes redondeados
             RoundedRectangle(cornerRadius: 25)
-                .fill(Color.gray.opacity(0.6))
-                .blur(radius: 0.5)
+                .fill(Color.white)
                 .shadow(color: Color.black.opacity(0.2), radius: 6, x: 0, y: 2)
         )
         .padding(.horizontal, 16)

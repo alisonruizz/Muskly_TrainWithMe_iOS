@@ -21,7 +21,7 @@ struct GoalsScreen: View {
         ZStack {
             Color("SecondaryContainer").edgesIgnoringSafeArea(.all)
 
-            VStack(alignment: .center, spacing: 12) {
+            VStack(alignment: .leading, spacing: 12) {
                 // Imagen y burbuja
                 HStack(alignment: .top, spacing: 8) {
                     Image("img6")
@@ -34,6 +34,7 @@ struct GoalsScreen: View {
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(.black)
                             .padding(12)
+                    
                     }
                     .frame(maxWidth: 200)
                 }
