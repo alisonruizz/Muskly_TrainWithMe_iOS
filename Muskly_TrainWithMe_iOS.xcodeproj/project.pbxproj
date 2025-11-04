@@ -20,6 +20,9 @@
 		880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */; };
 		880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */; };
 		880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F62EB6C78C00DE7406 /* HomeView.swift */; };
+		8868BB452EBAB261008A2FDA /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB442EBAB261008A2FDA /* AppNavigation.swift */; };
+		8868BB472EBAB37A008A2FDA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB462EBAB37A008A2FDA /* MainView.swift */; };
+		8868BB492EBAB676008A2FDA /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
 		880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		880EC5F62EB6C78C00DE7406 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8868BB442EBAB261008A2FDA /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		8868BB462EBAB37A008A2FDA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 				880EC5B52EB6A59600DE7406 /* ContentView.swift */,
 				880EC5B72EB6A59900DE7406 /* Assets.xcassets */,
 				880EC5B92EB6A59900DE7406 /* Preview Content */,
+				8868BB462EBAB37A008A2FDA /* MainView.swift */,
 			);
 			path = Muskly_TrainWithMe_iOS;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		880EC5DD2EB6B4EF00DE7406 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8868BB432EBAB22B008A2FDA /* Navigation */,
 				880EC5F32EB6C74100DE7406 /* HomeScreen */,
 				880EC5E82EB6C41000DE7406 /* GoalsScreen */,
 				880EC5E32EB6B76D00DE7406 /* ShopScreen */,
@@ -175,6 +183,15 @@
 				880EC5F62EB6C78C00DE7406 /* HomeView.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		8868BB432EBAB22B008A2FDA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8868BB442EBAB261008A2FDA /* AppNavigation.swift */,
+				8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +327,12 @@
 				880EC5EA2EB6C42600DE7406 /* GoalsView.swift in Sources */,
 				880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */,
 				880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */,
+				8868BB472EBAB37A008A2FDA /* MainView.swift in Sources */,
+				8868BB492EBAB676008A2FDA /* BottomNavigationBar.swift in Sources */,
 				880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */,
 				880EC5B42EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift in Sources */,
 				880EC5E72EB6B7FC00DE7406 /* ShopViewModel.swift in Sources */,
+				8868BB452EBAB261008A2FDA /* AppNavigation.swift in Sources */,
 				880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */,
 				880EC5E52EB6B7BC00DE7406 /* ShopView.swift in Sources */,
 			);

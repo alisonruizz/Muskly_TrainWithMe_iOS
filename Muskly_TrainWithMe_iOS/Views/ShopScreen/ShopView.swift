@@ -19,7 +19,7 @@ struct ShopScreen: View {
             // --- Nombre del personaje ---
             Text(viewModel.characterName)
                 .font(.system(size: 35, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.blue)
                 .frame(maxWidth: .infinity, alignment: .center)
 
             // --- Imagen del personaje ---
@@ -83,7 +83,7 @@ struct TabItem: View {
             Text(title)
                 .font(.system(size: 30))
                 .fontWeight(isSelected ? .bold : .regular)
-                .foregroundColor(.white)
+                .foregroundColor(.blue)
                 .onTapGesture { onClick() }
 
             if isSelected {
@@ -129,12 +129,12 @@ struct ShopItem: View {
                 .foregroundColor(.white)
             Text(item.name)
                 .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.white) //color del fondo
             HStack {
                 Text("\(item.price)")
                     .foregroundColor(.yellow)
                     .font(.system(size: 18, weight: .semibold))
-                Image("img14_png")
+                Image("img14")
                     .resizable()
                     .frame(width: 18, height: 18)
             }
@@ -144,12 +144,12 @@ struct ShopItem: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+                    .background(Color.green)
                     .cornerRadius(8)
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.3))
+        .background(Color.blue.opacity(0.7))
         .cornerRadius(12)
     }
 }
@@ -192,12 +192,12 @@ struct InventoryItem: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(item.isEquipped ? Color.red : Color.blue)
+                    .background(item.isEquipped ? Color.red : Color.green)
                     .cornerRadius(8)
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.3))
+        .background(Color.blue.opacity(0.7))
         .cornerRadius(12)
     }
 }

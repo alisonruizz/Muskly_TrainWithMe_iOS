@@ -5,7 +5,7 @@ struct TrainStartScreen: View {
 
     var body: some View {
         ZStack {
-            Color("SecondaryContainer").edgesIgnoringSafeArea(.all)
+            Color(Color.blue.opacity(0.3)).edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 24) {
                 Spacer().frame(height: 20)
@@ -14,21 +14,21 @@ struct TrainStartScreen: View {
                 VStack(spacing: 12) {
                     Text("Musk XP")
                         .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
 
                     HStack(alignment: .center) {
                         ZStack(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 50)
-                                .fill(Color("OnSecondaryContainer"))
+                                .fill(Color(Color.blue.opacity(0.7)))
                                 .frame(height: 25)
                                 .frame(maxWidth: .infinity)
                             RoundedRectangle(cornerRadius: 50)
-                                .fill(Color("PrimaryContainer"))
+                                .fill(Color(Color.green.opacity(0.7)))
                                 .frame(width: UIScreen.main.bounds.width * 0.8 * viewModel.xpProgress,
                                        height: 25)
                             Text("\(viewModel.currentXP)")
                                 .font(.system(size: 13, weight: .bold))
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .padding(.leading,
                                          max(0, UIScreen.main.bounds.width * 0.8 * CGFloat(viewModel.xpProgress) - 35))
                         }
@@ -36,10 +36,11 @@ struct TrainStartScreen: View {
 
                         Text("/ \(viewModel.maxXP) XP")
                             .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(.white.opacity(0.8))
+                            .foregroundColor(.black)
                     }
                 }
-
+                Spacer().frame(height: 40)
+                
                 // --- Burbuja de mensaje + mascota ---
                 VStack(spacing: -10) {
                     TrainingSpeechBubble {
@@ -48,21 +49,23 @@ struct TrainStartScreen: View {
                             .foregroundColor(.black)
                             .padding()
                     }
+                    Spacer().frame(height: 45)
                     Image("img33")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 160, height: 160)
                 }
-
+                
+                Spacer().frame(height: 20)
                 // --- Botón principal ---
                 Button(action: {
                     viewModel.showFirstSetDialog = true
                 }) {
                     Text("Start Train")
                         .font(.system(size: 22, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.green)
                         .frame(maxWidth: .infinity, minHeight: 55)
-                        .background(Color("PrimaryContainer"))
+                        .background(Color(Color.green.opacity(0.5)))
                         .cornerRadius(12)
                 }
                 .padding(.horizontal, 50)
@@ -135,19 +138,19 @@ struct CustomDialog: View {
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, minHeight: 50)
-                    .background(Color("PrimaryContainer"))
+                    .background(Color.green)
                     .cornerRadius(12)
             }
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color("SecondaryContainer"))
+        .background(Color.blue)
         .cornerRadius(16)
         .padding(.horizontal, 24)
         .overlay(
             Button(action: onDismiss) {
                 Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.white.opacity(0.7))
+                    .foregroundColor(.green.opacity(0.7))
                     .font(.title2)
             }
             .padding(),
