@@ -19,10 +19,10 @@ struct AppNavigation: View {
                 case .home:
                     TrainStartScreen()
                 case .train:
-                    // TrainScreen()
+                    //TrainView()
                     Color.green.opacity(0.1).overlay(Text("Train Screen"))
                 case .tips:
-                    // TipsScreen()
+                    //TipsView()
                     Color.orange.opacity(0.1).overlay(Text("Tips Screen"))
                 case .goals:
                     GoalsScreen()
