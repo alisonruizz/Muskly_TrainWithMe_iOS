@@ -5,7 +5,7 @@ struct TrainStartScreen: View {
 
     var body: some View {
         ZStack {
-            Color(Color.blue.opacity(0.3)).edgesIgnoringSafeArea(.all)
+            Color(Color("SecundaryContainer")).edgesIgnoringSafeArea(.all)
 
             VStack(spacing: 24) {
                 Spacer().frame(height: 20)
@@ -14,21 +14,21 @@ struct TrainStartScreen: View {
                 VStack(spacing: 12) {
                     Text("Musk XP")
                         .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color("Secundary"))
 
                     HStack(alignment: .center) {
                         ZStack(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 50)
-                                .fill(Color(Color.blue.opacity(0.7)))
+                                .fill(Color(Color("Secundary")))
                                 .frame(height: 25)
                                 .frame(maxWidth: .infinity)
                             RoundedRectangle(cornerRadius: 50)
-                                .fill(Color(Color.green.opacity(0.7)))
+                                .fill(Color(Color("PrimaryContainer")))
                                 .frame(width: UIScreen.main.bounds.width * 0.8 * viewModel.xpProgress,
                                        height: 25)
                             Text("\(viewModel.currentXP)")
                                 .font(.system(size: 13, weight: .bold))
-                                .foregroundColor(.black)
+                                .foregroundColor(Color("Primary"))
                                 .padding(.leading,
                                          max(0, UIScreen.main.bounds.width * 0.8 * CGFloat(viewModel.xpProgress) - 35))
                         }
@@ -36,7 +36,7 @@ struct TrainStartScreen: View {
 
                         Text("/ \(viewModel.maxXP) XP")
                             .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("OnBackground"))
                     }
                 }
                 Spacer().frame(height: 40)
@@ -46,7 +46,7 @@ struct TrainStartScreen: View {
                     TrainingSpeechBubble {
                         Text("I can't wait to start")
                             .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("OnBackground"))
                             .padding()
                     }
                     Spacer().frame(height: 45)
@@ -63,9 +63,9 @@ struct TrainStartScreen: View {
                 }) {
                     Text("Start Train")
                         .font(.system(size: 22, weight: .bold))
-                        .foregroundColor(.green)
+                        .foregroundColor(Color("Primary"))
                         .frame(maxWidth: .infinity, minHeight: 55)
-                        .background(Color(Color.green.opacity(0.5)))
+                        .background(Color(Color("PrimaryContainer")))
                         .cornerRadius(12)
                 }
                 .padding(.horizontal, 50)
@@ -75,8 +75,14 @@ struct TrainStartScreen: View {
             .padding(.horizontal, 24)
             .padding(.vertical, 32)
 
-            // --- Diálogo: Primer set ---
+            
+            // --- Fondo y diálogo: Primer set ---
             if viewModel.showFirstSetDialog {
+                Color.black.opacity(0.5) // ← capa de oscurecimiento
+                    .ignoresSafeArea()
+                    .transition(.opacity)
+                    .animation(.easeInOut, value: viewModel.showFirstSetDialog)
+
                 CustomDialog(
                     title: "First Set Started",
                     message: "Your first set has begun!\nFollow the instructions to complete it.",
@@ -89,8 +95,13 @@ struct TrainStartScreen: View {
                 }
             }
 
-            // --- Diálogo: Descanso ---
+            // --- Fondo y diálogo: Descanso ---
             if viewModel.showRestDialog {
+                Color.black.opacity(0.5)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
+                    .animation(.easeInOut, value: viewModel.showRestDialog)
+
                 CustomDialog(
                     title: "Rest",
                     message: "Take a short rest before your next set.",
@@ -102,6 +113,7 @@ struct TrainStartScreen: View {
                     viewModel.showRestDialog = false
                 }
             }
+
         }
     }
 }
@@ -120,11 +132,11 @@ struct CustomDialog: View {
         VStack(spacing: 16) {
             Text(title)
                 .font(.system(size: 20, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(Color("Secundary"))
 
             Text(message)
                 .font(.system(size: 16))
-                .foregroundColor(.white)
+                .foregroundColor(Color("OnBackground"))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
 
@@ -136,21 +148,21 @@ struct CustomDialog: View {
             Button(action: onConfirm) {
                 Text(confirmText)
                     .font(.system(size: 18, weight: .bold))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Primary"))
                     .frame(maxWidth: .infinity, minHeight: 50)
-                    .background(Color.green)
+                    .background(Color("PrimaryContainer"))
                     .cornerRadius(12)
             }
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color.blue)
+        .background(Color("SecundaryContainer"))
         .cornerRadius(16)
         .padding(.horizontal, 24)
         .overlay(
             Button(action: onDismiss) {
                 Image(systemName: "xmark.circle.fill")
-                    .foregroundColor(.green.opacity(0.7))
+                    .foregroundColor(Color("Primary"))
                     .font(.title2)
             }
             .padding(),

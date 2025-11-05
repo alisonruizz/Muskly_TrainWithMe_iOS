@@ -19,11 +19,9 @@ struct AppNavigation: View {
                 case .home:
                     TrainStartScreen()
                 case .train:
-                    //TrainView()
-                    Color.green.opacity(0.1).overlay(Text("Train Screen"))
+                    TrainView()
                 case .tips:
-                    //TipsView()
-                    Color.orange.opacity(0.1).overlay(Text("Tips Screen"))
+                    TipsView()
                 case .goals:
                     GoalsScreen()
                 case .shop:
@@ -31,7 +29,7 @@ struct AppNavigation: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color("SecondaryContainer").ignoresSafeArea())
+            .background(Color("SecundaryContainer").ignoresSafeArea())
 
             // 👇 Aquí se muestra tu barra personalizada blanca
             BottomNavigationBar(selectedTab: $selectedTab)

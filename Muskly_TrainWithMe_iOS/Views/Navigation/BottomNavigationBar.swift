@@ -19,12 +19,12 @@ struct BottomNavigationBar: View {
                 VStack(spacing: 4) {
                     Image(systemName: icon)
                         .font(.system(size: 22, weight: .semibold))
-                        .foregroundColor(selectedTab == route ? Color.blue : Color.gray.opacity(0.6))
+                        .foregroundColor(selectedTab == route ? Color("Secundary") : Color.gray.opacity(0.6))
 
                     Text(label)
                         .font(.caption2)
                         .fontWeight(selectedTab == route ? .bold : .regular)
-                        .foregroundColor(selectedTab == route ? Color.blue : Color.gray.opacity(0.6))
+                        .foregroundColor(selectedTab == route ? Color("Secundary") : Color.gray.opacity(0.6))
                 }
                 .padding(.vertical, 8)
                 .onTapGesture {

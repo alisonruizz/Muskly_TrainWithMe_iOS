@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		880EC5B42EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */; };
-		880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5B52EB6A59600DE7406 /* ContentView.swift */; };
 		880EC5B82EB6A59900DE7406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880EC5B72EB6A59900DE7406 /* Assets.xcassets */; };
 		880EC5BB2EB6A59900DE7406 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880EC5BA2EB6A59900DE7406 /* Preview Assets.xcassets */; };
 		880EC5C52EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5C42EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.swift */; };
@@ -20,11 +19,11 @@
 		880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */; };
 		880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */; };
 		880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F62EB6C78C00DE7406 /* HomeView.swift */; };
+		884336E02EBBA17500AB2571 /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336DF2EBBA17500AB2571 /* TipsViewModel.swift */; };
+		884336E22EBBA35500AB2571 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336E12EBBA35500AB2571 /* TipsView.swift */; };
 		8868BB452EBAB261008A2FDA /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB442EBAB261008A2FDA /* AppNavigation.swift */; };
 		8868BB472EBAB37A008A2FDA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB462EBAB37A008A2FDA /* MainView.swift */; };
 		8868BB492EBAB676008A2FDA /* BottomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */; };
-		884336E02EBBA17500AB2571 /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336DF2EBBA17500AB2571 /* TipsViewModel.swift */; };
-		884336E22EBBA35500AB2571 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336E12EBBA35500AB2571 /* TipsView.swift */; };
 		88E1C7F52EBAB96D00E12116 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F12EBAB96D00E12116 /* TrainingModel.swift */; };
 		88E1C7F62EBAB96D00E12116 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F22EBAB96D00E12116 /* AddExerciseView.swift */; };
 		88E1C7F72EBAB96D00E12116 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F32EBAB96D00E12116 /* Exercise.swift */; };
@@ -51,7 +50,6 @@
 /* Begin PBXFileReference section */
 		880EC5B02EB6A59600DE7406 /* Muskly_TrainWithMe_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muskly_TrainWithMe_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muskly_TrainWithMe_iOSApp.swift; sourceTree = "<group>"; };
-		880EC5B52EB6A59600DE7406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		880EC5B72EB6A59900DE7406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880EC5BA2EB6A59900DE7406 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		880EC5C02EB6A59900DE7406 /* Muskly_TrainWithMe_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Muskly_TrainWithMe_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,11 +63,11 @@
 		880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
 		880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		880EC5F62EB6C78C00DE7406 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		884336DF2EBBA17500AB2571 /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
+		884336E12EBBA35500AB2571 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		8868BB442EBAB261008A2FDA /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		8868BB462EBAB37A008A2FDA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBar.swift; sourceTree = "<group>"; };
-		884336DF2EBBA17500AB2571 /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
-		884336E12EBBA35500AB2571 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		88E1C7F12EBAB96D00E12116 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		88E1C7F22EBAB96D00E12116 /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		88E1C7F32EBAB96D00E12116 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
@@ -125,11 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				880EC5DD2EB6B4EF00DE7406 /* Views */,
-				880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */,
-				880EC5B52EB6A59600DE7406 /* ContentView.swift */,
 				880EC5B72EB6A59900DE7406 /* Assets.xcassets */,
 				880EC5B92EB6A59900DE7406 /* Preview Content */,
 				8868BB462EBAB37A008A2FDA /* MainView.swift */,
+				880EC5B32EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift */,
 			);
 			path = Muskly_TrainWithMe_iOS;
 			sourceTree = "<group>";
@@ -199,15 +196,6 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
-		8868BB432EBAB22B008A2FDA /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				8868BB442EBAB261008A2FDA /* AppNavigation.swift */,
-				8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */,
-			);
-			path = Navigation;
-            sourceTree = "<group>";
-        };
 		884336DE2EBBA15900AB2571 /* TipsScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +203,15 @@
 				884336E12EBBA35500AB2571 /* TipsView.swift */,
 			);
 			path = TipsScreen;
+			sourceTree = "<group>";
+		};
+		8868BB432EBAB22B008A2FDA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8868BB442EBAB261008A2FDA /* AppNavigation.swift */,
+				8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		88E1C7F02EBAB94800E12116 /* TrainScreen */ = {
@@ -363,7 +360,6 @@
 				880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */,
 				8868BB472EBAB37A008A2FDA /* MainView.swift in Sources */,
 				8868BB492EBAB676008A2FDA /* BottomNavigationBar.swift in Sources */,
-				880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */,
 				884336E22EBBA35500AB2571 /* TipsView.swift in Sources */,
 				88E1C7F82EBAB96D00E12116 /* TrainingView.swift in Sources */,
 				88E1C7F52EBAB96D00E12116 /* TrainingModel.swift in Sources */,

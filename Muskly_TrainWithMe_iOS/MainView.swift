@@ -5,7 +5,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color("SecondaryContainer")
+            Color("SecundaryContainer")
                 .ignoresSafeArea()
             
             AppNavigation()
@@ -18,7 +18,7 @@ struct MainView: View {
                     } label: {
                         Image(systemName: "questionmark.circle.fill")
                             .font(.title2)
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color("Secundary"))
                             .padding()
                     }
                 }

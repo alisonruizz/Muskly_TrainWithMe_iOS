@@ -19,7 +19,7 @@ struct GoalsScreen: View {
 
     var body: some View {
         ZStack {
-            Color("SecondaryContainer").edgesIgnoringSafeArea(.all)
+            Color("SecundaryContainer").edgesIgnoringSafeArea(.all)
 
             VStack(alignment: .leading, spacing: 12) {
                 // Imagen y burbuja
@@ -32,7 +32,7 @@ struct GoalsScreen: View {
                     SpeechBubble {
                         Text("Muskly dares you!")
                             .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("OnBackground"))
                             .padding(12)
                     
                     }
@@ -43,7 +43,7 @@ struct GoalsScreen: View {
                 HStack {
                     Text("Your goals")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("OnBackground"))
                     Spacer()
 
                     Menu {
@@ -52,7 +52,7 @@ struct GoalsScreen: View {
                         Button("Pending") { sortOption = "Pending" }
                     } label: {
                         Label("Sort by: \(sortOption)", systemImage: "arrowtriangle.down.fill")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color("Primary"))
                     }
                 }
                 .padding(.horizontal)
@@ -86,10 +86,10 @@ struct GoalsScreen: View {
                     Spacer()
                     Text(rewardMessage)
                         .font(.system(size: 16, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("OnBackground"))
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.gray.opacity(0.8))
+                        .background(Color("OutlineVariant"))
                         .cornerRadius(12)
                         .padding(.horizontal)
                         .transition(.move(edge: .bottom).combined(with: .opacity))
@@ -110,7 +110,7 @@ struct GoalItem: View {
         HStack {
             Text(goal.description)
                 .font(.system(size: 18))
-                .foregroundColor(goal.completed ? .black : .white)
+                .foregroundColor(goal.completed ? Color("Primary") : Color("SecundaryContainer"))
                 .lineLimit(2)
             Spacer()
             if !goal.completed {
@@ -126,7 +126,7 @@ struct GoalItem: View {
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(goal.completed ? Color.green.opacity(0.6) : Color.blue.opacity(0.6))
+        .background(goal.completed ? Color("PrimaryContainer") : Color("Secundary"))
         .cornerRadius(12)
         .onTapGesture { onClick() }
     }
@@ -139,13 +139,13 @@ struct SpeechBubble<Content: View>: View {
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             content()
-                .background(Color.gray)
+                .background(Color.white)
                 .cornerRadius(16)
                 .overlay(
                     Triangle()
-                        .fill(Color.gray)
-                        .frame(width: 20, height: 20)
-                        .offset(x: 20, y: 10),
+                        .fill(Color.white)
+                        .frame(width: 30, height: 30)
+                        .offset(x: 10, y: 18),
                     alignment: .bottomLeading
                 )
         }

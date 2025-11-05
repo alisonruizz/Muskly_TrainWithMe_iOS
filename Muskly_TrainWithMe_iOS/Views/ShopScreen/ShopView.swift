@@ -20,7 +20,7 @@ struct ShopScreen: View {
             // --- Nombre del personaje ---
             Text(viewModel.characterName)
                 .font(.system(size: 35, weight: .bold))
-                .foregroundColor(.blue)
+                .foregroundColor(  Color("Secundary"))
                 .frame(maxWidth: .infinity, alignment: .center)
 
             // --- Imagen del personaje con accesorios ---
@@ -92,7 +92,7 @@ struct ShopScreen: View {
 
         }
         .padding(16)
-        .background(Color("SecondaryContainer").edgesIgnoringSafeArea(.all))
+        .background(Color("SecundaryContainer").edgesIgnoringSafeArea(.all))
         .alert(item: $viewModel.itemToBuy) { item in
             Alert(
                 title: Text("Confirm Purchase"),
@@ -120,13 +120,13 @@ struct TabItem: View {
             Text(title)
                 .font(.system(size: 30))
                 .fontWeight(isSelected ? .bold : .regular)
-                .foregroundColor(.blue)
+                .foregroundColor(Color("Secundary"))
                 .onTapGesture { onClick() }
 
             if isSelected {
                 Rectangle()
                     .fill(Color.green)
-                    .frame(height: 3)
+                    .frame(height: 4)
             } else {
                 Spacer().frame(height: 3)
             }
@@ -163,10 +163,10 @@ struct ShopItem: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 52, height: 52)
-                .foregroundColor(.white)
+                .foregroundColor(Color("SecundaryContainer"))
             Text(item.name)
                 .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(Color("SecundaryContainer"))
             HStack {
                 Text("\(item.price)")
                     .foregroundColor(.yellow)
@@ -177,16 +177,16 @@ struct ShopItem: View {
             }
             Button(action: onBuy) {
                 Text("Buy")
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .foregroundColor(Color("Secundary"))
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(Color.green)
-                    .cornerRadius(8)
+                    .background(Color("PrimaryContainer"))
+                    .cornerRadius(14)
             }
         }
         .padding()
-        .background(Color.blue.opacity(0.7))
+        .background(Color("Secundary"))
         .cornerRadius(12)
     }
 }
@@ -223,22 +223,22 @@ struct InventoryItem: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 52, height: 52)
-                .foregroundColor(.white)
+                .foregroundColor(Color("SecundaryContainer"))
             Text(item.name)
                 .font(.system(size: 18, weight: .bold))
                 .foregroundColor(.white)
             Button(action: onToggleEquip) {
                 Text(item.isEquipped ? "Quit" : "Equip")
                     .font(.system(size: 18))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Secundary"))
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(item.isEquipped ? Color.red : Color.green)
+                    .background(item.isEquipped ? Color.red : Color("PrimaryContainer"))
                     .cornerRadius(8)
             }
         }
         .padding()
-        .background(Color.blue.opacity(0.7))
+        .background(Color("Secundary"))
         .cornerRadius(12)
     }
 }

@@ -20,7 +20,7 @@ class ShopViewModel: ObservableObject {
     
     @Published var inventoryItems: [Item] = [
         Item(name: "T-shirt", price: 0, icon: "tshirt"),
-        Item(name: "Cap", price: 0, icon: "capslock.fill")
+        Item(name: "Cap", price: 0, icon: "hat.cap.fill")
     ]
     
     @Published var itemToBuy: Item? = nil

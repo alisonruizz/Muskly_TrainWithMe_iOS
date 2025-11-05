@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
+
 struct Muskly_TrainWithMe_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
