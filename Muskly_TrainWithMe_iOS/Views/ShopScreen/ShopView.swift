@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ShopScreen: View {
     @StateObject private var viewModel = ShopViewModel()
+    @Namespace private var scrollSpace
 
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
@@ -19,15 +20,50 @@ struct ShopScreen: View {
             // --- Nombre del personaje ---
             Text(viewModel.characterName)
                 .font(.system(size: 35, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.blue)
                 .frame(maxWidth: .infinity, alignment: .center)
 
-            // --- Imagen del personaje ---
-            Image("img10")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 160, height: 160)
-                .padding(.top, 8)
+            // --- Imagen del personaje con accesorios ---
+            ZStack {
+                Image("img10") // personaje base
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 160, height: 160)
+                    .padding(.top, 8)
+
+                if viewModel.isSunglassesEquipped {
+                    Image("img37") // gafas
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .offset(x: -5)
+                        .offset(y: -20)
+                        .transition(.opacity)
+                }
+
+                if viewModel.isCapEquipped {
+                    Image("img38") // gorra
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .offset(x: -2)
+                        .offset(y: -52)
+                        .transition(.opacity)
+                }
+
+                if viewModel.isTshirtEquipped {
+                    Image("img39") // camiseta
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 80, height: 80)
+                        .offset(x: -2)
+                        .offset(y: 36)
+                        .transition(.opacity)
+                }
+            }
+            .animation(.easeInOut, value: viewModel.isSunglassesEquipped)
+            .animation(.easeInOut, value: viewModel.isCapEquipped)
+            .animation(.easeInOut, value: viewModel.isTshirtEquipped)
 
             // --- Tabs ---
             HStack {
@@ -48,7 +84,8 @@ struct ShopScreen: View {
                     viewModel.showBuyDialog(for: item)
                 }
             } else {
-                InventorySection(items: viewModel.inventoryItems) { item in
+                InventorySection(items: viewModel.inventoryItems,
+                                 scrollSpace: scrollSpace) { item in
                     viewModel.toggleEquip(item)
                 }
             }
@@ -83,7 +120,7 @@ struct TabItem: View {
             Text(title)
                 .font(.system(size: 30))
                 .fontWeight(isSelected ? .bold : .regular)
-                .foregroundColor(.white)
+                .foregroundColor(.blue)
                 .onTapGesture { onClick() }
 
             if isSelected {
@@ -134,7 +171,7 @@ struct ShopItem: View {
                 Text("\(item.price)")
                     .foregroundColor(.yellow)
                     .font(.system(size: 18, weight: .semibold))
-                Image("img14_png")
+                Image("img14")
                     .resizable()
                     .frame(width: 18, height: 18)
             }
@@ -144,27 +181,31 @@ struct ShopItem: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+                    .background(Color.green)
                     .cornerRadius(8)
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.3))
+        .background(Color.blue.opacity(0.7))
         .cornerRadius(12)
     }
 }
 
 struct InventorySection: View {
     let items: [Item]
+    let scrollSpace: Namespace.ID
     let onToggleEquip: (Item) -> Void
 
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())],
-                      spacing: 12) {
-                ForEach(items) { item in
-                    InventoryItem(item: item) {
-                        onToggleEquip(item)
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())],
+                          spacing: 12) {
+                    ForEach(items) { item in
+                        InventoryItem(item: item) {
+                            onToggleEquip(item)
+                        }
+                        .id(item.id)
                     }
                 }
             }
@@ -192,12 +233,12 @@ struct InventoryItem: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
-                    .background(item.isEquipped ? Color.red : Color.blue)
+                    .background(item.isEquipped ? Color.red : Color.green)
                     .cornerRadius(8)
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.3))
+        .background(Color.blue.opacity(0.7))
         .cornerRadius(12)
     }
 }

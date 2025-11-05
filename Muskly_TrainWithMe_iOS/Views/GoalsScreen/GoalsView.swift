@@ -21,7 +21,7 @@ struct GoalsScreen: View {
         ZStack {
             Color("SecondaryContainer").edgesIgnoringSafeArea(.all)
 
-            VStack(alignment: .center, spacing: 12) {
+            VStack(alignment: .leading, spacing: 12) {
                 // Imagen y burbuja
                 HStack(alignment: .top, spacing: 8) {
                     Image("img6")
@@ -30,10 +30,11 @@ struct GoalsScreen: View {
                         .frame(width: 120, height: 120)
 
                     SpeechBubble {
-                        Text("Keep going!")
+                        Text("Muskly dares you!")
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(.black)
                             .padding(12)
+                    
                     }
                     .frame(maxWidth: 200)
                 }
@@ -42,7 +43,7 @@ struct GoalsScreen: View {
                 HStack {
                     Text("Your goals")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     Spacer()
 
                     Menu {
@@ -51,7 +52,7 @@ struct GoalsScreen: View {
                         Button("Pending") { sortOption = "Pending" }
                     } label: {
                         Label("Sort by: \(sortOption)", systemImage: "arrowtriangle.down.fill")
-                            .foregroundColor(.white)
+                            .foregroundColor(.green)
                     }
                 }
                 .padding(.horizontal)
@@ -138,11 +139,11 @@ struct SpeechBubble<Content: View>: View {
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             content()
-                .background(Color.white)
+                .background(Color.gray)
                 .cornerRadius(16)
                 .overlay(
                     Triangle()
-                        .fill(Color.white)
+                        .fill(Color.gray)
                         .frame(width: 20, height: 20)
                         .offset(x: 20, y: 10),
                     alignment: .bottomLeading

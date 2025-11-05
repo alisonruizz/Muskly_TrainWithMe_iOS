@@ -1,6 +1,5 @@
 import SwiftUI
 
-// Modelo de datos para cada ítem
 struct Item: Identifiable, Equatable {
     let id = UUID()
     let name: String
@@ -9,20 +8,27 @@ struct Item: Identifiable, Equatable {
     var isEquipped: Bool = false
 }
 
-// ViewModel principal
 class ShopViewModel: ObservableObject {
     @Published var coins: Int = 500
     @Published var characterName: String = "Musk"
     @Published var selectedTab: String = "Shop"
+    
     @Published var shopItems: [Item] = [
-        Item(name: "Sunglasses", price: 80, icon: "eye"),
-        Item(name: "Scarf", price: 120, icon: "scissors")
+        Item(name: "Sunglasses", price: 80, icon: "eyeglasses"),
+        Item(name: "Scarf", price: 120, icon: "cloud.drizzle"),
     ]
+    
     @Published var inventoryItems: [Item] = [
         Item(name: "T-shirt", price: 0, icon: "tshirt"),
-        Item(name: "Cap", price: 0, icon: "person.crop.circle")
+        Item(name: "Cap", price: 0, icon: "capslock.fill")
     ]
+    
     @Published var itemToBuy: Item? = nil
+    
+    // Estado de accesorios visibles
+    @Published var isSunglassesEquipped = false
+    @Published var isCapEquipped = false
+    @Published var isTshirtEquipped = false
 
     // --- Funciones de negocio ---
     func selectTab(_ tab: String) {
@@ -48,13 +54,25 @@ class ShopViewModel: ObservableObject {
 
     func toggleEquip(_ item: Item) {
         inventoryItems = inventoryItems.map {
+            var updated = $0
             if $0.name == item.name {
-                var updated = $0
                 updated.isEquipped.toggle()
-                return updated
-            } else {
-                return $0
+                applyEquipment(for: updated)
             }
+            return updated
+        }
+    }
+
+    func applyEquipment(for item: Item) {
+        switch item.name {
+        case "Sunglasses":
+            isSunglassesEquipped = item.isEquipped
+        case "Cap":
+            isCapEquipped = item.isEquipped
+        case "T-shirt":
+            isTshirtEquipped = item.isEquipped
+        default:
+            break
         }
     }
 

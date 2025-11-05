@@ -25,7 +25,7 @@ class TrainStartViewModel: ObservableObject {
     func finishFirstSet() {
         showFirstSetDialog = false
         showRestDialog = true
-        addXP(50) // Ejemplo: gana 50 XP
+        addXP(10) // Ejemplo: gana 50 XP
     }
 
     /// Lógica para cerrar el diálogo de descanso
