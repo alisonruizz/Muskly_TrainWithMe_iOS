@@ -14,13 +14,13 @@ class ShopViewModel: ObservableObject {
     @Published var selectedTab: String = "Shop"
     
     @Published var shopItems: [Item] = [
-        Item(name: "Sunglasses", price: 80, icon: "eyeglasses"),
-        Item(name: "Scarf", price: 120, icon: "cloud.drizzle"),
+        Item(name: "Sunglasses", price: 80, icon: "sunglasses"),
+        Item(name: "Watch", price: 120, icon: "applewatch"),
     ]
     
     @Published var inventoryItems: [Item] = [
         Item(name: "T-shirt", price: 0, icon: "tshirt"),
-        Item(name: "Cap", price: 0, icon: "hat.cap.fill")
+        Item(name: "Cap", price: 0, icon: "graduationcap")
     ]
     
     @Published var itemToBuy: Item? = nil
