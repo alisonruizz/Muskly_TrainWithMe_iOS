@@ -1,3 +1,7 @@
 # Xcode user data and temporary files
 xcuserdata/
+<<<<<<< HEAD
 *.xcuserstate
+=======
+*.xcuserstate
+>>>>>>> Juan
