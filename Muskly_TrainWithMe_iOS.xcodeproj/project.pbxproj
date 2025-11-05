@@ -206,6 +206,8 @@
 				8868BB482EBAB676008A2FDA /* BottomNavigationBar.swift */,
 			);
 			path = Navigation;
+            sourceTree = "<group>";
+        };
 		884336DE2EBBA15900AB2571 /* TipsScreen */ = {
 			isa = PBXGroup;
 			children = (
