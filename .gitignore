@@ -1,0 +1,3 @@
+# Xcode user data and temporary files
+xcuserdata/
+*.xcuserstate

@@ -16,7 +16,7 @@ struct TrainView: View {
                 // Parte superior fija: imagen + título
                 VStack(spacing: 12) {
                     Text("Create your new routine")
-                        .font(.title3) // Más pequeño para evitar desbordamiento
+                        .font(.title3) // Más pequeño para evitar desbordamiento ientz
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.primary)

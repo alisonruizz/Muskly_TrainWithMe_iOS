@@ -20,6 +20,8 @@
 		880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */; };
 		880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */; };
 		880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880EC5F62EB6C78C00DE7406 /* HomeView.swift */; };
+		884336E02EBBA17500AB2571 /* TipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336DF2EBBA17500AB2571 /* TipsViewModel.swift */; };
+		884336E22EBBA35500AB2571 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884336E12EBBA35500AB2571 /* TipsView.swift */; };
 		88E1C7F52EBAB96D00E12116 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F12EBAB96D00E12116 /* TrainingModel.swift */; };
 		88E1C7F62EBAB96D00E12116 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F22EBAB96D00E12116 /* AddExerciseView.swift */; };
 		88E1C7F72EBAB96D00E12116 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1C7F32EBAB96D00E12116 /* Exercise.swift */; };
@@ -60,6 +62,8 @@
 		880EC5EB2EB6C44200DE7406 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
 		880EC5F42EB6C76D00DE7406 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		880EC5F62EB6C78C00DE7406 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		884336DF2EBBA17500AB2571 /* TipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewModel.swift; sourceTree = "<group>"; };
+		884336E12EBBA35500AB2571 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
 		88E1C7F12EBAB96D00E12116 /* TrainingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 		88E1C7F22EBAB96D00E12116 /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		88E1C7F32EBAB96D00E12116 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		880EC5DD2EB6B4EF00DE7406 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				884336DE2EBBA15900AB2571 /* TipsScreen */,
 				88E1C7F02EBAB94800E12116 /* TrainScreen */,
 				880EC5F32EB6C74100DE7406 /* HomeScreen */,
 				880EC5E82EB6C41000DE7406 /* GoalsScreen */,
@@ -184,6 +189,15 @@
 				880EC5F62EB6C78C00DE7406 /* HomeView.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		884336DE2EBBA15900AB2571 /* TipsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				884336DF2EBBA17500AB2571 /* TipsViewModel.swift */,
+				884336E12EBBA35500AB2571 /* TipsView.swift */,
+			);
+			path = TipsScreen;
 			sourceTree = "<group>";
 		};
 		88E1C7F02EBAB94800E12116 /* TrainScreen */ = {
@@ -331,6 +345,7 @@
 				880EC5F52EB6C76D00DE7406 /* HomeViewModel.swift in Sources */,
 				880EC5EC2EB6C44200DE7406 /* GoalsViewModel.swift in Sources */,
 				880EC5B62EB6A59600DE7406 /* ContentView.swift in Sources */,
+				884336E22EBBA35500AB2571 /* TipsView.swift in Sources */,
 				88E1C7F82EBAB96D00E12116 /* TrainingView.swift in Sources */,
 				88E1C7F52EBAB96D00E12116 /* TrainingModel.swift in Sources */,
 				880EC5B42EB6A59600DE7406 /* Muskly_TrainWithMe_iOSApp.swift in Sources */,
@@ -339,6 +354,7 @@
 				880EC5F72EB6C78C00DE7406 /* HomeView.swift in Sources */,
 				88E1C7F62EBAB96D00E12116 /* AddExerciseView.swift in Sources */,
 				880EC5E52EB6B7BC00DE7406 /* ShopView.swift in Sources */,
+				884336E02EBBA17500AB2571 /* TipsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
