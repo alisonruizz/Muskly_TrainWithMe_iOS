@@ -31,7 +31,7 @@ struct AppNavigation: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("SecundaryContainer").ignoresSafeArea())
 
-            // 👇 Aquí se muestra tu barra personalizada blanca
+            // barra
             BottomNavigationBar(selectedTab: $selectedTab)
         }
         .ignoresSafeArea(.keyboard)
